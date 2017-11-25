@@ -1,0 +1,10 @@
+{
+    "name": "demo/demo",
+    "type": "sprinkle",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "UserFrosting\\Sprinkle\\Demo\\": "src/"
+        }
+    }
+}
