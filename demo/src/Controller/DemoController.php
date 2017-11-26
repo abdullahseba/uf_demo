@@ -13,9 +13,6 @@
 namespace UserFrosting\Sprinkle\Demo\Controller;
 
 use UserFrosting\Sprinkle\Core\Controller\SimpleController;
-use UserFrosting\Sprinkle\Scheduler\Controller\TaskController;
-use UserFrosting\Support\Exception\ForbiddenException;
-
 
 /**
 * DemoController Class
