@@ -4,10 +4,10 @@
 * Demo controller
 *
 * @author Abdullah Seba
-* @link example.comn
+* UserFrosting (http://www.userfrosting.com)
 *
-* @version 1.0.0
-*
+* @link      https://github.com/userfrosting/UserFrosting
+* @license   https://github.com/userfrosting/UserFrosting/blob/master/licenses/UserFrosting.md (MIT License)
 */
 
 namespace UserFrosting\Sprinkle\Demo\Controller;
