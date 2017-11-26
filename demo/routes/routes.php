@@ -31,13 +31,13 @@ $app->group('/account', function () {
  * Routes for administrative user management.
  */
 $app->group('/api/users', function () {
-    $this->delete('/u/{user_name}', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
+    $this->delete('/u/{user_name}', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
 
-    $this->post('', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
+    $this->post('', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
 
-    $this->post('/u/{user_name}/password-reset', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
+    $this->post('/u/{user_name}/password-reset', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
 
-    $this->put('/u/{user_name}', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
+    $this->put('/u/{user_name}', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
 
-    $this->put('/u/{user_name}/{field}', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
+    $this->put('/u/{user_name}/{field}', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
 })->add('authGuard');
