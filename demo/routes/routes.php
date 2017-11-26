@@ -33,16 +33,6 @@ $app->group('/account', function () {
 $app->group('/api/users', function () {
     $this->delete('/u/{user_name}', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
 
-    $this->get('', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
-
-    $this->get('/u/{user_name}', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
-
-    $this->get('/u/{user_name}/activities', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
-
-    $this->get('/u/{user_name}/roles', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
-
-    $this->get('/u/{user_name}/permissions', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
-
     $this->post('', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
 
     $this->post('/u/{user_name}/password-reset', 'UserFrosting\Sprinkle\Demo\Controller\UserController:demoMessage');
