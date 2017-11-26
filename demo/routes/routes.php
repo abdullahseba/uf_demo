@@ -6,7 +6,7 @@
  * @license   https://github.com/userfrosting/UserFrosting/blob/master/licenses/UserFrosting.md (MIT License)
  */
 
-$app->group('/Demo', function () {
+$app->group('/account', function () {
 
 
     $this->post('/forgot-password', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
