@@ -1,13 +1,5 @@
-{% extends "pages/abstract/base.html.twig" %}
+{% extends "@account/pages/sign-in.html.twig" %}
 
-{# Overrides blocks in head of base template #}
-{% block page_title %}{{translate('SIGNIN')}}{% endblock %}
-
-{% block page_description %}{{translate('PAGE.LOGIN.DESCRIPTION', {'site_name': site.title })}}{% endblock %}
-
-{% block body_attributes %}
-    class="hold-transition login-page"
-{% endblock %}
 
 {% block content %}
 <div class="login-box">
@@ -60,26 +52,4 @@
     <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
-{% endblock %}
-
-{% block scripts_page %}
-    <!-- Include validation rules -->
-    <script>
-        {% include "pages/partials/page.js.twig" %}
-    </script>
-
-    <script>
-    site = $.extend(
-        true,               // deep extend
-        {
-            "registration" : {
-                "enabled" : "{{site.registration.enabled}}"
-            }
-        },
-        site
-    );
-    </script>
-
-    <!-- Include page-specific JS -->
-    {{ assets.js('js/pages/sign-in') | raw }}
 {% endblock %}
