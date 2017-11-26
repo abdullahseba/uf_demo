@@ -18,13 +18,14 @@ use UserFrosting\Support\Exception\ForbiddenException;
 
 
 /**
- * DemoController Class
- */
+* DemoController Class
+*/
 class DemoController extends SimpleController
 {
-    //Test Page
+    //Demo message
     public function demoMessage($request, $response, $args)
     {
-    $this->ci->alerts->addMessageTranslated('danger', 'Sorry, this feture has been disabled in the demo.');
+        //Send message
+        $this->ci->alerts->addMessageTranslated('danger', $this->ci->translator->translate('DEMO_MESSAGE'));
     }
 }

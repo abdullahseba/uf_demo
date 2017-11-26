@@ -8,7 +8,6 @@
 
 $app->group('/account', function () {
 
-
     $this->post('/forgot-password', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
 
     $this->post('/register', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
