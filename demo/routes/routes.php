@@ -41,3 +41,34 @@ $app->group('/api/users', function () {
 
     $this->put('/u/{user_name}/{field}', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
 })->add('authGuard');
+
+/**
+ * Routes for administrative role management.
+ */
+$app->group('/api/roles', function () {
+    $this->delete('/r/{slug}', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
+
+    $this->post('', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
+
+    $this->put('/r/{slug}', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
+
+    $this->put('/r/{slug}/{field}', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
+})->add('authGuard');
+
+/**
+ * Routes for administrative group management.
+ */
+$app->group('/api/groups', function () {
+    $this->delete('/g/{slug}', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
+
+    $this->post('', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
+
+    $this->put('/g/{slug}', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
+})->add('authGuard');
+
+/**
+ * Routes for administrative panel management.
+ */
+$app->group('/api/dashboard', function () {
+    $this->post('/clear-cache', 'UserFrosting\Sprinkle\Demo\Controller\DemoController:demoMessage');
+})->add('authGuard');
