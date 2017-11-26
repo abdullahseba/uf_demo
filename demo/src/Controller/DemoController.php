@@ -10,7 +10,7 @@
 *
 */
 
-namespace UserFrosting\Sprinkle\Scheduler\Controller;
+namespace UserFrosting\Sprinkle\Demo\Controller;
 
 use UserFrosting\Sprinkle\Core\Controller\SimpleController;
 use UserFrosting\Sprinkle\Scheduler\Controller\TaskController;
